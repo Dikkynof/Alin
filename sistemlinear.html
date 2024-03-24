@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'sistemlinear';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsistemlinear.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/sistemlinear.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p>#Menggambar persamaan bidang dalam ruang 3D</p>
+<p>#Selesaikan persamaan berikut</p>
+<p><img alt="Soal tugas 1.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxAAAAFHCAMAAAAGM1qpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALuUExURf////7+/vT09JSUlGNjY4ODg9DQ0Nra2nx8fGJiYrOzs/Ly8u/v719fXxUVFUVFRbi4uPr6+snJyZeXl5qamtXV1cjIyDs7OxQUFI6Ojuvr6+Tk5MrKyrGxsbu7u83Nzefn5/Dw8GhoaCIiIlBQULy8vN7e3nBwcBsbGyYmJn9/f/Hx8cvLy0ZGRiEhIezs7P39/e3t7cbGxoSEhBwcHA0NDRERESMjI0xMTIqKisTExOnp6fv7+1dXVxYWFiUlJV5eXuPj4+Li4ouLiykpKSgoKCwsLC0tLSsrKycnJyAgIHh4eJiYmEFBQUpKSrW1tY+Pj11dXcPDw+7u7vj4+Pb29rm5uWFhYR4eHn19fff39/z8/KysrERERNvb2+jo6KGhoYmJiTg4OK6uruXl5WxsbBISEkJCQtfX15WVlZCQkKCgoMLCwubm5pubm5mZmeDg4Pn5+dPT06ioqJOTk5GRkba2tpycnJKSksXFxfPz876+vsDAwNbW1rKysqSkpJaWlsfHx21tbRMTE25ubjIyMg4ODggICB0dHU5OTs7OzkNDQxcXFwcHB3t7e2ZmZioqKgwMDAkJCTw8PKampnFxcT09PRgYGAoKCh8fH1NTU2pqajc3NwsLC+rq6nNzc2dnZ6+vrzAwMA8PD1tbW6qqqo2NjTk5OT8/Py4uLlJSUszMzEBAQDY2NqmpqYaGhvX19TU1NaKiojMzM35+fllZWYiIiDExMS8vL7q6uhkZGdnZ2UlJSVZWVr29vWRkZCQkJM/Pz1paWuHh4VFRUYGBgaOjo7CwsEhISL+/v5+fnzQ0NHV1dZ2dnTo6OoCAgD4+Pqenp9zc3Hp6ek1NTbe3t3d3d93d3RoaGqWlpdjY2FxcXGVlZdTU1FhYWHZ2doeHh2BgYN/f36urq1VVVXR0dNLS0tHR0VRUVLS0tGlpacHBwa2trYWFhU9PT0tLS4KCgkdHR29vb56enhAQEIyMjGtra3Jycnl5eQAAAD+dTH4AAAD6dFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDeYEUjAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAenklEQVR4Xu2d23XrKhCGUwkv6kGN8EwNVLIXVeiJR9aiFGiAQs4/gG6OLDuxc3HO/2XvRDcj25phbki8EUIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhPwg0UXfFx8iJ6d0XybkVdFuNKovfwZvbW4LYYxUCPK70V5NSvkTQYVClAcUIrtxSHXJm8FSIchvRvtkxn//BhNPnBk3PGIhfBmHUk0EFIIWgvxmchyGIYQh4E+6FidoNzxiId6s6fpEC0F+N9oOQxFvSSs3jOmKsD6qEAu0EOR3M4XBdQnV9momCQrxUFC9QAtBfjU6DmHqy2/6qqjSQpD/B5JPPTQLfrLRLlG2WIj1MK1kX8ujVvwU9xuyvNqueSuFlbqwsRAKL2lLb14a7EcIqu6RRqZrNouQrwAKsVqIFQQUoSaeZnncukwqhvHfGNKsLnlC9CEbpqYS2k9O8lZj6cWHt7c4DrEurBbCl35m7a1Dg/+GsjhTaXRZT/IW0MaiVYR8OTqGIW269oZknoIxJsx2YeMyaUQdbV+YqqzC62obxmDbAWbsR4yzNMfQ9kEh+rYMFWv6YPHCdvhsPHTC2fASbMVGVrbJN6LKOKA77msNEfGqJcoMrmrEJqjGtqobkOhQN6kw1oNyKl3CB1Ml25dhaDrzZodFIbrUQxHbAk5m6lFouDWInVCo9g5sGAq9JvKNWClDpC6JDRtC82s0hLQJ+WIhVOkltrdcBsnS1u68bphj8tz7dA1z0K3PxkJUl0lPwxJc+35urcK8LcFoNEcOrc9aQsh3IB4OXJzV3xdJd30F8lgXFwshWalZQKcg20RXlpc2uqTXXa17v3SZ1KIqYD48u2ZqqoVoIQe0ZODgJ/KtaBXNMI7BxS6i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" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">A</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">19</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 8  9  1 19]
+ [ 1  2  3  9]
+ [ 2  1  1  5]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">RowSwap</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">l</span><span class="p">):</span>
+<span class="c1"># =============================================================================</span>
+<span class="c1">#     A is a NumPy array.  RowSwap will return duplicate array with rows</span>
+<span class="c1">#     k and l swapped.</span>
+<span class="c1"># =============================================================================</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># m is number of rows in A</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># n is number of columns in A</span>
+
+    <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+        <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+        <span class="n">B</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span>
+
+    <span class="k">return</span> <span class="n">B</span>
+
+<span class="k">def</span> <span class="nf">RowScale</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">scale</span><span class="p">):</span>
+<span class="c1"># =============================================================================</span>
+<span class="c1">#     A is a NumPy array.  RowScale will return duplicate array with the</span>
+<span class="c1">#     entries of row k multiplied by scale.</span>
+<span class="c1"># =============================================================================</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># m is number of rows in A</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># n is number of columns in A</span>
+
+    <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*=</span> <span class="n">scale</span>
+
+    <span class="k">return</span> <span class="n">B</span>
+
+<span class="k">def</span> <span class="nf">RowAdd</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">scale</span><span class="p">):</span>
+<span class="c1"># =============================================================================</span>
+<span class="c1">#     A is a numpy array.  RowAdd will return duplicate array with row</span>
+<span class="c1">#     l modifed.  The new values will be the old values of row l added to</span>
+<span class="c1">#     the values of row k, multiplied by scale.</span>
+<span class="c1"># =============================================================================</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># m is number of rows in A</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># n is number of columns in A</span>
+
+    <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">B</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">scale</span>
+
+    <span class="k">return</span> <span class="n">B</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B1</span> <span class="o">=</span> <span class="n">RowSwap</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">B2</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">B3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">B2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 8  9  1 19]
+ [ 1  2  3  9]
+ [ 2  1  1  5]]
+
+
+[[ 8.   9.   1.  19. ]
+ [ 1.   2.   3.   9. ]
+ [ 1.   0.5  0.5  2.5]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Pindahkan baris 0 ke baris 1</span>
+<span class="n">A1</span> <span class="o">=</span> <span class="n">RowSwap</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  2.  3.  9.]
+ [ 8.  9.  1. 19.]
+ [ 2.  1.  1.  5.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#tambahkan, -8 dikali baris 0 ke baris 1</span>
+<span class="n">A2</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">A1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[  1.   2.   3.   9.]
+ [  0.  -7. -23. -53.]
+ [  2.   1.   1.   5.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#tambahkan, -2 dikali baris 0 ke baris 2</span>
+<span class="n">A3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">A2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[  1.   2.   3.   9.]
+ [  0.  -7. -23. -53.]
+ [  0.  -3.  -5. -13.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#kalikan baris 1 dengan -1/7</span>
+<span class="n">A4</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">A3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[  1.           2.           3.           9.        ]
+ [ -0.           1.           3.28571429   7.57142857]
+ [  0.          -3.          -5.         -13.        ]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#tambahkan 3 dikali baris 1 ke baris 2</span>
+<span class="n">A5</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">A4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.          2.          3.          9.        ]
+ [-0.          1.          3.28571429  7.57142857]
+ [ 0.          0.          4.85714286  9.71428571]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#kalikan baris 2 dengan 1/4</span>
+<span class="n">A6</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">A5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hasil akhir dari simulasi gaussian&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hasil akhir dari simulasi gaussian
+[[ 1.          2.          3.          9.        ]
+ [-0.          1.          3.28571429  7.57142857]
+ [ 0.          0.          1.21428571  2.42857143]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Sekarang mari kita terjemahkan array matrik ini kembali ke sistem persamaan</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x_1+2x_2+3x_3=9\\
+x_2+3.28571429x_3=7.57142857\\
+x_3=2\\
+\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="mf">7.57142857</span><span class="o">-</span><span class="p">(</span><span class="mf">3.28571429</span><span class="o">*</span><span class="n">x3</span><span class="p">)</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="mi">9</span><span class="o">-</span><span class="n">x3</span><span class="o">*</span><span class="mi">3</span><span class="o">-</span><span class="n">x2</span><span class="o">*</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x3:&#39;</span><span class="p">,</span><span class="n">x3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x2:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">x2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x1:&#39;</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x3: 2
+x2: 1
+x1: 1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+
+<span class="c1"># Koefisien untuk masing-masing persamaan bidang</span>
+<span class="n">a1</span><span class="p">,</span> <span class="n">b1</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">r1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span>
+<span class="n">a2</span><span class="p">,</span> <span class="n">b2</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">r2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">27</span>
+<span class="n">a3</span><span class="p">,</span> <span class="n">b3</span><span class="p">,</span> <span class="n">c3</span><span class="p">,</span> <span class="n">r3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
+
+<span class="c1"># Buat data x, y</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Buat grid x, y</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Hitung nilai z sesuai dengan persamaan bidang</span>
+<span class="n">Z1</span> <span class="o">=</span> <span class="p">(</span><span class="n">r1</span> <span class="o">-</span> <span class="n">a1</span><span class="o">*</span><span class="n">X</span> <span class="o">-</span> <span class="n">b1</span><span class="o">*</span><span class="n">Y</span><span class="p">)</span> <span class="o">/</span> <span class="n">c1</span>
+<span class="n">Z2</span> <span class="o">=</span> <span class="p">(</span><span class="n">r2</span> <span class="o">-</span> <span class="n">a2</span><span class="o">*</span><span class="n">X</span> <span class="o">-</span> <span class="n">b2</span><span class="o">*</span><span class="n">Y</span><span class="p">)</span> <span class="o">/</span> <span class="n">c2</span>
+<span class="n">Z3</span> <span class="o">=</span> <span class="p">(</span><span class="n">r3</span> <span class="o">-</span> <span class="n">a3</span><span class="o">*</span><span class="n">X</span> <span class="o">-</span> <span class="n">b3</span><span class="o">*</span><span class="n">Y</span><span class="p">)</span> <span class="o">/</span> <span class="n">c3</span>
+
+<span class="c1"># Plot persamaan bidang dalam tiga dimensi</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot bidang</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z1</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">rstride</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">cstride</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">rstride</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">cstride</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">rstride</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">cstride</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+
+<span class="c1"># Titik perpotongan</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">a1</span><span class="p">,</span> <span class="n">b1</span><span class="p">,</span> <span class="n">c1</span><span class="p">],</span> <span class="p">[</span><span class="n">a2</span><span class="p">,</span> <span class="n">b2</span><span class="p">,</span> <span class="n">c2</span><span class="p">],</span> <span class="p">[</span><span class="n">a3</span><span class="p">,</span> <span class="n">b3</span><span class="p">,</span> <span class="n">c3</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">r1</span><span class="p">,</span> <span class="n">r2</span><span class="p">,</span> <span class="n">r3</span><span class="p">])</span>
+<span class="n">intersect</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">intersect</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">intersect</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">intersect</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Titik Perpotongan&#39;</span><span class="p">)</span>
+
+<span class="c1"># Label sumbu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
+
+<span class="c1"># Tampilkan legenda</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Tampilkan plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/55665a78f4229f4edc5d12f9b61bc750947475742031f567f46a5c50842baed5.png" src="_images/55665a78f4229f4edc5d12f9b61bc750947475742031f567f46a5c50842baed5.png" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
