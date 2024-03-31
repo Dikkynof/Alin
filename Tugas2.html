@@ -57,11 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tugas2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Matrix Invers" href="Matrix%20Invers.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,6 +120,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -251,7 +251,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftugas2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugas2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +281,7 @@
       
       
       
-      <li><a href="_sources/tugas2.ipynb" target="_blank"
+      <li><a href="_sources/Tugas2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,6 +377,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berikan-pengertian-apa-itu-matrix">Berikan pengertian apa itu matrix</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-matrix">Pengertian Matrix</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-penjumlahan-matrix">Operasi Penjumlahan Matrix</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pengurangan-matrix">Operasi Pengurangan Matrix</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-matrix">Operasi Perkalian Matrix</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tranpose-matrix">Tranpose Matrix</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#program-untuk-mengkalikan-matrix-a-dengan-matrix-b-secara-manual-tidak-menggunakan">Program untuk mengkalikan Matrix A dengan Matrix B Secara Manual tidak menggunakan ‘@’</a></li>
@@ -409,20 +411,7 @@ document.write(`
 </section>
 <section id="pengertian-matrix">
 <h2>Pengertian Matrix<a class="headerlink" href="#pengertian-matrix" title="Link to this heading">#</a></h2>
-<p>Matrix adalah susunan bilangan real atau bilangan kompleks (atau elemen-elemen) yang disusun dalam baris dan kolom sehingga membentuk jajaran persegi panjang.</p>
-<p>Matrix terdiri dari beberapa jenis sebagai berikut :</p>
-<ul class="simple">
-<li><p>Matrix persegi</p></li>
-<li><p>Matrix kolom</p></li>
-<li><p>Matrix baris</p></li>
-<li><p>Matrix Transpose</p></li>
-</ul>
-<p>Operasi Matrix</p>
-<p>Operasi Matrix adalah operasi yang dilakukan terhadap sebuah satu atau lebih matrix .Operasi matrix pada dasarnya meliputi : penjumlahan, pengurangan, perkalian.</p>
-<ol class="arabic simple">
-<li><p>Penjumlahan matrix <br>
-penjumlahan matrix adalah penjumlahan yang dilakukan terhadap dua buah matrix dengan komponen=komponennya yang seletak. Matrix ini dapat dijumlahkan jika jumlah baris dan kolomnya sama dan juga hasil dari penjumlahan ini juga akan memiliki ordo yang sama.</p></li>
-</ol>
+<p>Matrix adalah susunan bilangan, simbol, atau ekspresi yang disusun dalam baris dan kolom sehingga membentuk suatu bangun persegi.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -432,7 +421,7 @@ penjumlahan matrix adalah penjumlahan yang dilakukan terhadap dua buah matrix de
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contoh Matrix</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matrix</span>
 
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span> <span class="c1"># matrix 3x3</span>
 <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> <span class="c1"># matrix 3x3</span>
@@ -475,6 +464,8 @@ Matrix D 3x3:
 </div>
 </div>
 </div>
+<section id="operasi-penjumlahan-matrix">
+<h3>Operasi Penjumlahan Matrix<a class="headerlink" href="#operasi-penjumlahan-matrix" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matrix A+B</span>
@@ -492,9 +483,9 @@ Matrix D 3x3:
 </div>
 </div>
 </div>
-<ol class="arabic simple" start="2">
-<li><p>Operasi Pengurangan Matrix</p></li>
-</ol>
+</section>
+<section id="operasi-pengurangan-matrix">
+<h3>Operasi Pengurangan Matrix<a class="headerlink" href="#operasi-pengurangan-matrix" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matrix A - B</span>
@@ -512,6 +503,7 @@ Matrix D 3x3:
 </div>
 </div>
 </div>
+</section>
 <section id="operasi-perkalian-matrix">
 <h3>Operasi Perkalian Matrix<a class="headerlink" href="#operasi-perkalian-matrix" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
@@ -674,24 +666,6 @@ Pembuktian untuk Matrix A @ B =
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="notebooks.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content with notebooks</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Matrix%20Invers.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Matrix Invers</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -710,6 +684,8 @@ Pembuktian untuk Matrix A @ B =
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#berikan-pengertian-apa-itu-matrix">Berikan pengertian apa itu matrix</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-matrix">Pengertian Matrix</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-penjumlahan-matrix">Operasi Penjumlahan Matrix</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pengurangan-matrix">Operasi Pengurangan Matrix</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-matrix">Operasi Perkalian Matrix</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tranpose-matrix">Tranpose Matrix</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#program-untuk-mengkalikan-matrix-a-dengan-matrix-b-secara-manual-tidak-menggunakan">Program untuk mengkalikan Matrix A dengan Matrix B Secara Manual tidak menggunakan ‘@’</a></li>
