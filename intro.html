@@ -42,7 +42,7 @@
   <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -151,8 +153,8 @@
       
     
     
-    <img src="_static/profil.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/profil.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
   
 </a></div>
@@ -173,14 +175,23 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Welcome to my Pages
+                    Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="sistem_linear.html">Tugas 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Tugas 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Matrix Invers.html">Tugas 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas2.html"><strong>Tugas 2</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix%20Invers.html">Matrix Invers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
+
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -364,7 +375,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to my Pages</h1>
+    <h1>Welcome to your Jupyter Book</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,12 +390,26 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-your-jupyter-book">
-<h1>Welcome to my web<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
+<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
+<p>This is a small sample book to give you a feel for how book content is
+structured.
+It shows off a few of the major file types, as well as some sample content.
+It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
+<p>Check out the content pages bundled with this sample book to see more.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="sistem_linear.html">Tugas 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Tugas 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Matrix Invers.html"><strong>Tugas 3</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas2.html"><strong>Tugas 2</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix%20Invers.html">Matrix Invers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html#sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah">Sifat 2 : jika salah satu baris diubah nilai elemennya maka hasil determinannnya juga ikut berubah</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html#sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1">Sifat 3 : Jika suatu baris ataupun kolom merupakan kelipatan dari baris atau kolom yang lain maka determinan matrix tersebut adalah 0 (baris 2 adalah kelipatan dari baris 1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html#sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d">sifat 4 : Jika matrix tersebut adalah kelipatan sebanyak n * matrix maka untuk mencari determinan adalah (n^(sebanyak ordo)determinan matrix)contoh matrix g adalah kelipatan 2 kali dari matrix d : (2^3(det d))</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html#sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix">Sifat 5 : Jika terdapat matrix baru dengan nilai salah satu baris atau kolom adalah kelipatan 2 dari matrix sebelumnya maka dapat disimpulkan dengan 2*(determinan matrix)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html#sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut">Sifat 6 : Jika suatu matrix yang berasal dari penjumlahan matrix k dengan matrix a maka untuk mencari determinan cukup menjumlahkan hasil dari 2 determinan matrix tersebut</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html#sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut">Sifat 7 : Jika ada matrix segitiga atas atau bawah maka determinan nya adalah perkalian anggota diagonal matrix tersebut</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html#sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0">Sifat 8 : untuk mencari determinan dari Hasil perkalian matrix O dengan matrix p yaitu dengan mengalikan determinan matrix O dan p contoh (det O = 1 , det p = 1 maka det q adalah 0)</a></li>
 </ul>
 </div>
 </section>
